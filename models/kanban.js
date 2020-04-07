@@ -5,7 +5,7 @@ module.exports = (sequelize, DataTypes) => {
 
     class Kanban extends Model {}
 
-    Kanban.unit({
+    Kanban.init({
         title: DataTypes.STRING,
         description: DataTypes.STRING,
         tag: DataTypes.STRING,
