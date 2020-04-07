@@ -20,7 +20,9 @@ class KanbanController {
             title,
             description,
             tag,
-            userId
+            userId,
+            createdAt: new Date(),
+            updatedAt: new Date()
         }
         Kanban.create(newdata)
             .then(result => {
