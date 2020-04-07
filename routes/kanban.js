@@ -1,6 +1,6 @@
 const router = require('express').Router()
-const { authentication } = require('../middlewares/authentication')
-const { authorization } = require('../middlewares/authorization')
+const authentication = require('../middlewares/authentication')
+const authorization = require('../middlewares/authorization')
 const KabanController = require('../controllers/KanbanController')
 
 router.use(authentication)
