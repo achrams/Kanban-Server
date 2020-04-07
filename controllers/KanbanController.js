@@ -50,7 +50,7 @@ class KanbanController {
                     "msg": "Data not found"
                 })
                 else {
-                    Kanban.update(updatedData, { where: { id: result.id } })
+                    Kanban.update(updatedData, { where: { id: data.id } })
                         .then(result => {
                             return res.status(200).json({ result })
                         })
