@@ -38,8 +38,10 @@ class KanbanController {
     }
     static update(req, res, next) {
         let id = +req.params.id
-        let { tag } = req.body
+        let { title, description, tag } = req.body
         let updatedData = {
+            title,
+            description,
             tag
         }
 
